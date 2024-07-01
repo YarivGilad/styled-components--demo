@@ -79,14 +79,14 @@ export default function App() {
 
 // 4. Using the 3 Counter instances with props
 //--------------------------------------------
-import { TopBar } from "./top-bar";
+import { TopBar } from "./top-bar/top-bar.view";
 import { UserInput } from "./user-input";
 import { Counter } from "./counter";
 
 export function App() {
   return (
     <div className="app">
-      <TopBar>React Components are state machines</TopBar>
+      <TopBar>state machines</TopBar>
       <h1 className="headline white-text">_ ^ _ Stateful Bookstore _ ^ _</h1>
       <Counter item="Book" initialValue={3}/>
       <Counter item="Customer" initialValue={12}/>

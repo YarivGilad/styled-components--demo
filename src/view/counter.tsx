@@ -1,4 +1,6 @@
 import { useState } from "react";
+import {Btn} from "../styles/buttons.styled.ts";
+import { primaryColor } from "../styles/colors.ts";
 
 interface Props {
   item: string;
@@ -11,9 +13,9 @@ export function Counter({item,initialValue}: Props) {
   return (
       <div className="hbox space-between mt20">
         <h3 className="paragraph">{item} counter: {count}</h3>
-        <button className="button" onClick={() => setCount(count + 1)}>
+        <Btn bg={primaryColor} onClick={() => setCount(count + 1)}>
           add {item}
-        </button>
+        </Btn>
       </div>
   );
 } 
